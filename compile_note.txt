@@ -1,0 +1,30 @@
+*****Server nodejs, Client C*****
+1. On terminal 
+    $ node server.js
+2. If it ask for dependency 
+    $ npm install net
+3. Compile client.c using g++ compiler
+    $ g++ client.c -o client
+4. Run client as
+    $ ./client
+
+*****Server C, Client nodejs*****
+1. Compile server.c using g++ compiler
+    $ g++ server.c -o server
+2. Run server as
+    $ ./server
+3. Run client.js as
+    $ node client.js
+4. If it as for dependency
+    $ npm install net
+
+Reference links:
+for node-js
+https://nodejs.org/api/net.html#netconnectport-host-connectlistener
+https://www.knowledgehut.com/tutorials/node-js/socket-services
+for c
+https://www.geeksforgeeks.org/socket-programming-cc/
+
+for both
+https://github.com/alperr/ipc
+https://stackoverflow.com/questions/39841942/communicating-between-nodejs-and-c-using-node-ipc-and-unix-sockets
